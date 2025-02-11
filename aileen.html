@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Kunst</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #4E3629;
+        color: #FFF;
+        text-align: center;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: #3A251C;
+        padding: 15px;
+    }
+    .navbar a {
+        color: #D2B48C;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    .navbar a:hover {
+        background-color: #8B5A2B;
+    }
+    .header-image {
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        background: url('unnamed.jpg') no-repeat center center/cover;
+        opacity: 0;
+        animation: fadeIn 3s forwards;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <a href="#main">Main</a>
+  <a href="#portraits">Portraits</a>
+  <a href="#landscape">Landschaften</a>
+  <a href="#stillleben">Stillleben</a>
+  <a href="#alle">Alle</a>
+  <a href="#neueste">Neueste</a>
+  <a href="#ueber-mich">Über mich</a>
+</nav>
+<div class="header-image"></div>
+</body>
+</html>
